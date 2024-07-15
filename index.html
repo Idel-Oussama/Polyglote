@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyglot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="a.jpg" alt="Polyglot Logo" width="741" height="641">
+        </div>
+        <div class="nav-items">
+            <a href="#hero-section" class="almarai-regular">الرئيسية</a>
+            <a href="#services-section" class="almarai-regular">خدماتنا</a>
+            <a href="#about-us-section" class="almarai-regular">من نحن</a>
+            <a href="#contact-us-section" class="almarai-regular">تواصل معنا</a>
+        </div>
+    </nav>
+    <section id="hero-section" class="hero">
+        <div class="hero-container">
+            <div class="column-left">
+                <h1 class="almarai-bold">لنجاح شبابنا</h1>
+                <p class="almarai-regular">
+                    تقدم مدرستنا خدمات تعليمية متعددة
+                </p>
+                <button class="almarai-regular"><a href="#services-section" class="almarai-regular">خدماتنا</a></button>
+            </div>
+            <div class="column-right">
+                <img src="./image-1.svg" alt="illustration" class="hero-image">
+            </div>
+        </div>
+    </section>
+    <section id="services-section" class="services">
+        <div class="services-container">
+            <div class="services-heading almarai-bold">خدماتنا</div>
+            <div class="services-categories">
+                <div class="services-category">
+                    <h2 class="almarai-bold">المقرر الدراسي</h2>
+                    <ul class="almarai-regular">
+                        <a href="primary.html"><li>الابتدائي</li></a>
+                        <li>المتوسط</li>
+                        <li>الثانوية</li>
+                    </ul>
+                </div>
+                <div class="services-category">
+                    <h2 class="almarai-bold">اللغات</h2>
+                    <ul class="almarai-regular">
+                        <li>الانجليزية</li>
+                        <li>الفرنسية</li>
+                        <li>الاسبانية</li>
+                        <li>الالمانية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us-section" class="about-us">
+        <div class="about-us-container">
+            <div class="about-us-heading almarai-bold">من نحن</div>
+            <div class="about-us-content">
+                <p class="almarai-regular">
+                    نحن مدرسة متخصصة في تقديم خدمات تعليمية عالية الجودة للطلاب من مختلف الأعمار والمستويات. نهدف إلى تمكين شبابنا من اكتساب المعرفة والمهارات اللازمة لنجاحهم في المستقبل.
+                </p>
+                <p class="almarai-regular">
+                    بفضل فريقنا التعليمي المتخصص والملتزم، نقدم بيئة تعليمية داعمة ومحفزة تساعد الطلاب على تحقيق إمكاناتهم الكاملة.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us-section" class="contact-us">
+        <div class="contact-us-container">
+            <div class="contact-us-heading almarai-bold">تواصل معنا</div>
+            <div class="contact-us-content">
+                <!-- Your contact form or contact information can go here -->
+                <p class="almarai-regular">
+                    يمكنكم التواصل معنا للحصول على مزيد من المعلومات أو للتسجيل في دوراتنا التعليمية عبر البريد الإلكتروني أو الهاتف.
+                </p>
+                <p class="almarai-regular">
+                    البريد الإلكتروني: <a href="mailto:adjeroudiimad@gmail.com" target="_blank" class="email-link">adjeroudiimad@gmail.com</a><br>
+                    الهاتف: <a href="tel:+966556242379" class="phone-link">0556242379</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const sectionId = this.getAttribute('href').substr(1);
+
+                document.getElementById(sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الابتدائي</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="a.jpg" alt="Polyglot Logo" width="741" height="641">
+        </div>
+        <div class="nav-items">
+            <a href="#hero-section" class="almarai-regular">الرئيسية</a>
+            <a href="#services-section" class="almarai-regular">خدماتنا</a>
+            <a href="#about-us-section" class="almarai-regular">من نحن</a>
+            <a href="#contact-us-section" class="almarai-regular">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <div class="our-services">
+        <h1 class="our-services-heading">الابتدائي</h1>
+        <div class="our-services-content">
+            <ul class="almarai-regular">
+                <li><a href="#grade3">الثالثة لابتدائي</a></li>
+                <li><a href="#grade4">الرابعة ابتدائي</a></li>
+                <li><a href="#grade5">الخامسة ابتدائي</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Grade 3 Section -->
+    <div id="grade3" class="grade-section">
+        <h2 class="grade-heading">الثالثة لابتدائي</h2>
+        <div class="subjects">
+            <ul class="almarai-regular">
+                <li><a href="arabic.html">عربية</a></li>
+                <li><a href="math.html">رياضيات</a></li>
+                <li><a href="french.html">فرنسية</a></li>
+                <li><a href="english.html">انجليزية</a></li>
+            </ul>
+            <p class="subject-description">عربية: نص توضيحي لمادة العربية</p>
+            <p class="subject-description">رياضيات: نص توضيحي لمادة الرياضيات</p>
+            <p class="subject-description">فرنسية: نص توضيحي لمادة الفرنسية</p>
+            <p class="subject-description">انجليزية: نص توضيحي لمادة الانجليزية</p>
+        </div>
+    </div>
+
+    <!-- Grade 4 Section -->
+    <div id="grade4" class="grade-section">
+        <h2 class="grade-heading">الرابعة ابتدائي</h2>
+        <div class="subjects">
+            <ul class="almarai-regular">
+                <li><a href="arabic.html">عربية</a></li>
+                <li><a href="math.html">رياضيات</a></li>
+                <li><a href="french.html">فرنسية</a></li>
+                <li><a href="english.html">انجليزية</a></li>
+            </ul>
+            <p class="subject-description">عربية: نص توضيحي لمادة العربية</p>
+            <p class="subject-description">رياضيات: نص توضيحي لمادة الرياضيات</p>
+            <p class="subject-description">فرنسية: نص توضيحي لمادة الفرنسية</p>
+            <p class="subject-description">انجليزية: نص توضيحي لمادة الانجليزية</p>
+        </div>
+    </div>
+
+    <!-- Grade 5 Section -->
+    <div id="grade5" class="grade-section">
+        <h2 class="grade-heading">الخامسة ابتدائي</h2>
+        <div class="subjects">
+            <ul class="almarai-regular">
+                <li><a href="arabic.html">عربية</a></li>
+                <li><a href="math.html">رياضيات</a></li>
+                <li><a href="french.html">فرنسية</a></li>
+                <li><a href="english.html">انجليزية</a></li>
+            </ul>
+            <p class="subject-description">عربية: نص توضيحي لمادة العربية</p>
+            <p class="subject-description">رياضيات: نص توضيحي لمادة الرياضيات</p>
+            <p class="subject-description">فرنسية: نص توضيحي لمادة الفرنسية</p>
+            <p class="subject-description">انجليزية: نص توضيحي لمادة الانجليزية</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const sectionId = this.getAttribute('href').substr(1);
+
+                document.getElementById(sectionId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

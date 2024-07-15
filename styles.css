@@ -1,0 +1,144 @@
+/* styles.css */
+
+/* Global reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Almarai', sans-serif; /* Default font */
+}
+
+body {
+    direction: rtl; /* Right-to-left text direction */
+    background-color: #f0f0f0; /* Light gray background */
+    line-height: 1.6; /* Improved readability */
+    padding-top: 80px; /* Ensure content below navbar is not obscured */
+}
+
+/* Navigation styles */
+#navbar {
+    height: 80px;
+    background-color: #ffffff; /* White background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo img {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+.nav-items a:hover {
+    color: #1004fd; /* Dark blue on hover */
+}
+
+/* Our Services section */
+.our-services {
+    background-color: #fff; /* White background */
+    padding: 50px 20px;
+    margin-top: 80px; /* Ensure space below navbar */
+    text-align: center;
+}
+
+.our-services-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.our-services-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.our-services-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.our-services-content ul li {
+    margin-bottom: 10px;
+}
+
+.our-services-content ul li a {
+    text-decoration: none;
+    color: #1004fd; /* Dark blue links */
+}
+
+.our-services-content ul li a:hover {
+    color: #000; /* Dark blue on hover */
+}
+
+/* Grade sections */
+.grade-section {
+    background-color: #fff; /* White background */
+    padding: 50px 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grade-heading {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.subjects {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.subjects ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.subjects ul li {
+    margin-bottom: 10px;
+}
+
+.subjects ul li a {
+    text-decoration: none;
+    color: #1004fd; /* Dark blue links */
+}
+
+.subjects ul li a:hover {
+    color: #000; /* Dark blue on hover */
+}
+
+.subject-description {
+    font-size: 1.2rem;
+    color: #666; /* Gray text */
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .nav-items a {
+        padding: 10px 0;
+    }
+}

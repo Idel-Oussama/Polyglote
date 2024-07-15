@@ -1,0 +1,398 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    direction: rtl; /* Set the direction of the text to RTL */
+    padding-top: 80px; /* Ensure content below navbar is not obscured */
+}
+/* Global Styles */
+body {
+    font-family: 'Almarai', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+#navbar {
+    background-color: #5900ff;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.nav-items a:hover {
+    text-decoration: underline;
+}
+
+/* Our Services Section */
+.our-services {
+    background-color: #3498db; /* Adjusted to blue */
+    color: #ffffff; /* Adjusted text color */
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.our-services-heading {
+    font-size: 32px; /* Adjusted font size */
+}
+
+.our-services-content {
+    margin-top: 20px;
+}
+
+.our-services-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.our-services-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Grade Sections */
+.grade-section {
+    background-color: #ffffff; /* Adjusted to white */
+    padding: 50px 20px;
+    margin-top: 20px;
+}
+
+.grade-heading {
+    color: #3498db;
+    text-align: center;
+    font-size: 24px; /* Adjusted font size */
+}
+
+.subjects {
+    margin-top: 20px;
+}
+
+.subjects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subjects ul li {
+    margin-bottom: 10px;
+}
+
+.subject-description {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+
+nav {
+    height: 80px;
+    background: #ffffff; /* Change background color to white */
+    color: #000; /* Set text color to black */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    position: fixed; /* Fixed positioning */
+    width: 100%; /* Span entire width */
+    top: 0; /* Keep at the top */
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+
+.logo {
+    padding: 0 1rem; /* Adjust padding as needed */
+}
+
+.logo img {
+    width: 75px; /* Adjust width to fit within navbar */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper block display */
+}
+
+.nav-items {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 1.5rem;
+    position: relative;
+    font-family: 'Almarai', sans-serif; /* Apply Almarai font to Arabic links */
+    font-weight: 400;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: transparent; /* Change the background to transparent */
+    bottom: -5px;
+    right: 0;
+    transition: width 0.3s ease-out, background-color 0.3s ease-out; /* Include background-color transition */
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+    background-color: #000; /* Change the background color on hover */
+}
+
+.hero {
+    background: #1004fd;
+    padding-top: 80px; /* Ensure content below navbar is not obscured */
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0rem 2rem;
+    font-family: 'Almarai', sans-serif; /* Apply Almarai font to Arabic text */
+    font-weight: 400;
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: 'Almarai', sans-serif; /* Apply Almarai font to headings */
+    font-weight: 700;
+}
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Almarai', sans-serif; /* Apply Almarai font to paragraphs */
+    font-weight: 400;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    color: #ffffff;
+    background: #000;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: 'Almarai', sans-serif; /* Apply Almarai font to buttons */
+    font-weight: 400;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure button behaves correctly */
+}
+
+button a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+
+.column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Almarai font classes (optional) */
+.almarai-light {
+    font-family: "Almarai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.almarai-regular {
+    font-family: "Almarai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.almarai-bold {
+    font-family: "Almarai", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.almarai-extrabold {
+    font-family: "Almarai", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Services Section */
+.services {
+    background-color: #1004fd; /* Blue background */
+    color: #fff; /* White text */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.services-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #fff; /* Add a bottom border for outline */
+    padding-bottom: 1rem; /* Space between heading and categories */
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-categories {
+    display: flex;
+    justify-content: space-around; /* Distribute categories evenly */
+    border: 2px solid #fff; /* Add a border around categories */
+    padding: 2rem; /* Padding inside the border */
+}
+
+.services-category {
+    flex: 1;
+    padding: 0 2rem;
+}
+
+.services-category h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #fff; /* White text */
+    border-bottom: 2px solid #fff; /* Add bottom border to separate from modules */
+    padding-bottom: 1rem; /* Space between headline and modules */
+}
+
+.services-category ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.5rem; /* Space between modules and headline */
+}
+
+.services-category li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #f0f0f0; /* Light gray text */
+}
+
+/* Ensure all list items use Almarai font */
+.services-category ul.almarai-regular {
+    text-align: right; /* Align text to the right */
+}
+
+.services-category ul.almarai-regular li {
+    font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #1004fd; /* Blue background */
+    color: #fff; /* White text */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-us-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #fff; /* Add a bottom border for outline */
+    padding-bottom: 1rem; /* Space between heading and content */
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center align text */
+    padding: 2rem; /* Add padding for better spacing */
+    border: 2px solid #fff; /* Add border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.about-us-content p {
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #1004fd; /* Blue background */
+    color: #fff; /* White text */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-us-heading {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #fff; /* Add a bottom border for outline */
+    padding-bottom: 1rem; /* Space between heading and content */
+}
+
+.contact-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center align text */
+    padding: 2rem; /* Add padding for better spacing */
+    border: 2px solid #fff; /* Add border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+.contact-us-content p {
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .services-categories {
+        flex-direction: column; /* Stack categories vertically on small screens */
+    }
+}
