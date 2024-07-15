@@ -88,8 +88,15 @@ nav a:hover::after {
 }
 
 .responsive {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+    .responsive {
+        max-width: 75%;
+    }
 }
 /* Media query for larger screens */
 @media (min-width: 1024px) {
