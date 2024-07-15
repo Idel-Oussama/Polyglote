@@ -324,4 +324,8 @@ button a {
     .services-categories {
         flex-direction: column; /* Stack categories vertically on small screens */
     }
+    .email-link, .phone-link {
+        display: block;
+        margin-top: 1rem; /* Add space between links on small screens */
+    }
 }
