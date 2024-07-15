@@ -324,7 +324,5 @@ button a {
     .services-categories {
         flex-direction: column; /* Stack categories vertically on small screens */
     }
-    .email-link {
-        margin-right: 1cm; /* Move email link to the right by 1 cm */
-    }
+    
 }
