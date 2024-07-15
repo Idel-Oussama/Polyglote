@@ -15,8 +15,8 @@ body {
 
 nav {
     height: 80px;
-    background: #ffffff; /* Change background color to white */
-    color: #000; /* Set text color to black */
+    background: #000000; /* Change background color to white */
+    color: #ffffff; /* Set text color to black */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,7 +86,7 @@ nav a:hover::after {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #000;
+    color: #ffffff;
     padding: 0rem 2rem;
     font-family: 'Almarai', sans-serif; /* Apply Almarai font to Arabic text */
     font-weight: 400;
