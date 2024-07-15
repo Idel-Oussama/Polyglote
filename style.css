@@ -15,7 +15,7 @@ body {
 
 nav {
     height: 80px;
-    background: #000000; /* Change background color to white */
+    background: #2c293a; /* Change background color to white */
     color: #ffffff; /* Set text color to black */
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ nav a:hover::after {
 
 .hero {
     background: #1004fd;
-    padding-top: 80px; /* Ensure content below navbar is not obscured */
+    padding-top: 10px; /* Ensure content below navbar is not obscured */
 }
 
 .hero-container {
@@ -112,7 +112,7 @@ button {
     font-size: 1rem;
     border: none;
     color: #ffffff;
-    background: #000;
+    background: #2c293a;
     cursor: pointer;
     border-radius: 50px;
     font-family: 'Almarai', sans-serif; /* Apply Almarai font to buttons */
@@ -186,7 +186,6 @@ button a {
 }
 
 .services-container {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -195,6 +194,7 @@ button a {
     justify-content: space-around; /* Distribute categories evenly */
     border: 2px solid #fff; /* Add a border around categories */
     padding: 2rem; /* Padding inside the border */
+    margin: 2rem;
 }
 
 .services-category {
@@ -248,8 +248,7 @@ button a {
 }
 
 .about-us-content {
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 2rem;
     text-align: center; /* Center align text */
     padding: 2rem; /* Add padding for better spacing */
     border: 2px solid #fff; /* Add border */
@@ -280,8 +279,7 @@ button a {
 }
 
 .contact-us-content {
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 2rem;
     text-align: center; /* Center align text */
     padding: 2rem; /* Add padding for better spacing */
     border: 2px solid #fff; /* Add border */
@@ -295,7 +293,16 @@ button a {
     line-height: 2;
     margin-bottom: 2rem;
 }
-
+.email-link {
+    font-size: 100%;
+}
+.phone-link {
+    font-size: 100%;
+}
+.link {
+    text-decoration: none;
+    color: #272434;
+}
 @media screen and (max-width: 768px) {
     .services-categories {
         flex-direction: column; /* Stack categories vertically on small screens */
